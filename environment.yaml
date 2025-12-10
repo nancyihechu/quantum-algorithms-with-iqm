@@ -1,0 +1,14 @@
+name: quantum-env
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - numpy=2.0
+  - matplotlib
+  - pip
+  - pip:
+      - iqm-client[qiskit]>=32.1.1,<33.0
+      - qrisp[iqm]
+      - pylatexenc
